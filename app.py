@@ -2,16 +2,20 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from joblib import load  
+from sklearn.preprocessing import LabelEncoder
 
-@st.cache_resource
+# Function to load the model (without caching decorator for troubleshooting)
 def load_model():
-    return load("best_model.joblib") 
+    return load("best_model.joblib")  # Ensure the model file is in the same directory
 
+# Load the model
 model = load_model()
 
+# Streamlit app title
 st.title("Stroke Prediction App")
 st.write("This app predicts the likelihood of a stroke based on user inputs.")
 
+# Sidebar for user input features
 st.sidebar.header("User Input Features")
 
 def get_user_input():
@@ -77,18 +81,40 @@ def get_user_input():
 
     return input_data
 
+# Get user input
 user_input = get_user_input()
 input_df = pd.DataFrame([user_input])
 
+# Display user input
 st.subheader("User Input:")
 st.write(input_df)
 
+# Preprocessing: Encode categorical variables if necessary
+def preprocess_input_data(input_df):
+    # Initialize LabelEncoder for categorical variables
+    le = LabelEncoder()
+
+    input_df['gender'] = le.fit_transform(input_df['gender'])
+    input_df['ever_married'] = le.fit_transform(input_df['ever_married'])
+    input_df['work_type'] = le.fit_transform(input_df['work_type'])
+    input_df['Residence_type'] = le.fit_transform(input_df['Residence_type'])
+    input_df['smoking_status'] = le.fit_transform(input_df['smoking_status'])
+    input_df['age_category'] = le.fit_transform(input_df['age_category'])
+    input_df['glucose_level_category'] = le.fit_transform(input_df['glucose_level_category'])
+
+    return input_df
+
+# Apply preprocessing
+input_df = preprocess_input_data(input_df)
+
+# Prediction logic
 if st.button("Predict"):
     prediction = model.predict(input_df)
     prediction_proba = model.predict_proba(input_df)
 
     st.subheader("Prediction")
     st.write("Stroke" if prediction[0] == 1 else "No Stroke")
+
     st.subheader("Prediction Probability")
     st.write(f"Probability of Stroke: {prediction_proba[0][1]:.2f}")
     st.write(f"Probability of No Stroke: {prediction_proba[0][0]:.2f}")
