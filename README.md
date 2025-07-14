@@ -66,6 +66,7 @@ Perform Exploratory Data Analysis (EDA) — visualize distributions, check corre
 
 ### 🔹 Evaluating the Model:
 Execute the core ML pipeline: data preprocessing, handling imbalances (e.g., SMOTE, oversampling), model training and evaluation with Logistic Regression, Random Forest, XGBoost, etc.
+
 ---
 
 ## 📁 Project Structure
