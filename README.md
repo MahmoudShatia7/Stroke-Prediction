@@ -15,9 +15,8 @@ A machine learning pipeline to predict the likelihood of a stroke using patient 
 2. [Features](#features)  
 3. [Installation](#installation)  
 4. [Usage](#usage)  
-5. [Results](#results)  
-6. [Project Structure](#project-structure)  
-7. [Contact](#contact)  
+5. [Project Structure](#project-structure)  
+6. [Contact](#contact)  
 
 ---
 
