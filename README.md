@@ -6,9 +6,7 @@
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-1.1%2B-orange)  
 ![License](https://img.shields.io/badge/License-MIT-green)  
 
-
 A machine learning pipeline to predict the likelihood of a stroke using patient health data.
-
 
 ---
 
@@ -19,7 +17,8 @@ A machine learning pipeline to predict the likelihood of a stroke using patient 
 4. [Usage](#usage)  
 5. [Results](#results)  
 6. [Project Structure](#project-structure)  
-7. [Contact](#contact)
+7. [Contact](#contact)  
+
 ---
 
 ## 🔍 Overview
@@ -28,59 +27,45 @@ This project presents a complete end-to-end machine learning pipeline that lever
 
 The pipeline covers all essential stages of a data science workflow:
 
-- **Exploratory Data Analysis** to understand feature distributions and correlations
-- **Preprocessing**: handling missing values & encoding categorical data
-- **Handling Class Imbalance** with resampling (SMOTE, oversampling, etc.)
-- **Model Training**: various classifiers such as Logistic Regression, Random Forest, XGBoost, etc.
-- **Evaluation** using metrics like precision, recall, F1-score, and confusion matrices
+- **Exploratory Data Analysis** to understand feature distributions and correlations  
+- **Preprocessing**: handling missing values & encoding categorical data  
+- **Handling Class Imbalance** with resampling (SMOTE, oversampling, etc.)  
+- **Model Training**: various classifiers such as Logistic Regression, Random Forest, XGBoost, etc.  
+- **Evaluation** using metrics like precision, recall, F1-score, and confusion matrices  
 
 The final outcome is a set of interpretable and scalable models that can assist in early detection of stroke risk, potentially helping healthcare professionals prioritize patient care.
 
 ---
 
 ## 🚀 Features
+
 ✅ Full end-to-end ML pipeline  
 ✅ Multiple models – Logistic Regression, Random Forest, XGBoost  
 ✅ Handles missing values & imbalanced data  
 ✅ Visualizations: correlation plots, confusion matrices  
-✅ Modular notebooks for easy updates and experimentation
+✅ Modular notebooks for easy updates and experimentation  
 
 ---
 
 ## 🛠 Installation
 
-```bash
-# Clone the repo
-git clone https://github.com/MahmoudShatia7/Stroke-Prediction.git
-cd Stroke-Prediction
+1. *Clone the Repository*:
+   bash
+   git clone https://github.com/MahmoudShatia7/Stroke-Prediction.git
+   cd Stroke-Prediction
 
-# Install dependencies
-pip install -r requirements.txt
-   
+2. *Install Dependencies*:
+   bash
+   pip install -r requirements.txt
 
 ---
-
 ## 📌 Usage
 ### 🔹 EDA Notebook:
 Perform Exploratory Data Analysis (EDA) — visualize distributions, check correlations, and identify missing data.
 
 
-### 🔹 Evaluating the Model
+### 🔹 Evaluating the Model:
 Execute the core ML pipeline: data preprocessing, handling imbalances (e.g., SMOTE, oversampling), model training and evaluation with Logistic Regression, Random Forest, XGBoost, etc.
-
-
-
----
-
-## 📊 Results
-### 🏆 Training Loss:
-- Track the loss function over epochs to assess model convergence.
-
-### 📈 Evaluation Accuracy:
-- Measure how well the model classifies important sentences.
-
-(You can visualize results using *Matplotlib* or *TensorBoard*.)
-
 ---
 
 ## 📁 Project Structure
@@ -90,7 +75,7 @@ Stroke‑Prediction/
 ├── Test The Model.ipynb
 ├── Stroke prediction Deploy.ipynb
 ├── requirements.txt
-└── README.md
+└── README.md  
 
 ---
 
@@ -116,7 +101,7 @@ Contributions are welcome! To contribute:
 ## 📧 Contact
 For questions or feedback, feel free to reach out:
 📩 *Email:* shatiamahmoud33@gamil.com  
-🔗 *GitHub:* [Mahmoud Shatia](https://github.com/MahmoudShatia7)  
+🔗 *GitHub:* [Mahmoud Shatia](https://github.com/MahmoudShatia7) 
 
 ---
 
