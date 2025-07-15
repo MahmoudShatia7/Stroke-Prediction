@@ -60,11 +60,11 @@ The final outcome is a set of interpretable and scalable models that can assist 
 ---
 ## 📌 Usage
 ### 🔹 EDA Notebook:
-      Perform Exploratory Data Analysis (EDA) — visualize distributions, check correlations, and identify missing data.
+   Perform Exploratory Data Analysis (EDA) — visualize distributions, check correlations, and identify missing data.
 
 
 ### 🔹 Evaluating the Model:
-       Execute the core ML pipeline: data preprocessing, handling imbalances (e.g., SMOTE, oversampling), model training and evaluation with Logistic Regression, Random Forest, XGBoost, etc.
+   Execute the core ML pipeline: data preprocessing, handling imbalances (e.g., SMOTE, oversampling), model training and evaluation with Logistic Regression, Random Forest, XGBoost, etc.
 
 ---
 
