@@ -70,11 +70,17 @@ The final outcome is a set of interpretable and scalable models that can assist 
 
 ## 📁 Project Structure
 Stroke‑Prediction/
+
 ├── healthcare-dataset-stroke-data.csv
+
 ├── last_trail.ipynb
+
 ├── Test The Model.ipynb
+
 ├── Stroke prediction Deploy.ipynb
+
 ├── requirements.txt
+
 └── README.md  
 
 ---
